@@ -71,14 +71,14 @@ return ( <main className="min-h-screen flex flex-col bg-white text-neutral-900 d
       {/* Links */}
       <div className="mt-6 flex justify-center gap-6 text-sm">
         <a
-          href="https://tu-portfolio.com"
+          href="https://google.com"
           target="_blank"
           className="hover:opacity-80 transition"
         >
           Portafolio
         </a>
         <a
-          href="mailto:tuemail@gmail.com"
+          href="mailto:labs@ahautech.com"
           className="hover:opacity-80 transition"
         >
           Contacto
