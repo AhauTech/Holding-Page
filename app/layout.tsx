@@ -31,6 +31,8 @@ export default function RootLayout({
     >
       <head>
         <Script
+          id="dark-mode-script"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `               const isDark = localStorage.theme === "dark" || (!localStorage.theme && window.matchMedia("(prefers-color-scheme: dark)").matches);
 
