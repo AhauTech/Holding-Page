@@ -10,6 +10,7 @@ export default function Home() {
     setDomain(window.location.hostname);
   }, []);
 
+
   return (
     <main className="min-h-screen flex flex-col bg-white text-neutral-900 dark:bg-neutral-950 dark:text-neutral-200 transition-colors duration-500 ease-in-out **:transition-colors **:duration-500">
       {/* HEADER */}
@@ -28,7 +29,9 @@ export default function Home() {
           </span>
         </div>
 
-        <ThemeToggle />
+        <span className="text-sm px-3 py-1 rounded-md border border-neutral-300">
+          <ThemeToggle />
+        </span>
       </header>
 
       {/* CONTENT */}
