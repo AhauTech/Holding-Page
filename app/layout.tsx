@@ -31,15 +31,9 @@ export default function RootLayout({
     >
       <head>
         <Script
-          id="dark-mode-script"
+          id="theme-init"
           strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `               const isDark = localStorage.theme === "dark" || (!localStorage.theme && window.matchMedia("(prefers-color-scheme: dark)").matches);
-
-              if (isDark) document.documentElement.classList.add("dark");
-            `,
-          }}
-        />
+        >{`(function(){var t=localStorage.getItem('theme');if(t==='dark')document.documentElement.classList.add('dark')})()`}</Script>
       </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

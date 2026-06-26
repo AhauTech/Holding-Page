@@ -12,6 +12,37 @@
   --font-mono: var(--font-geist-mono);
 }
 
+:root:not(.dark) {
+  --color-canvas:        #ffffff;
+  --color-canvas-soft:   #f8f8f8;
+  --color-canvas-muted:  #f0f0f0;
+
+  --color-surface:        #f4f4f5;
+  --color-surface-raised: #ebebed;
+  --color-surface-border: #d4d4d8;
+
+  --color-ink:           #0c0c0e;
+  --color-ink-secondary: #52525b;
+  --color-ink-muted:     #a1a1aa;
+  --color-ink-inverse:   #ffffff;
+}
+
+/* Modo oscuro — activado con clase .dark en <html> */
+.dark {
+  --color-canvas:        #0c0c0e;
+  --color-canvas-soft:   #111114;
+  --color-canvas-muted:  #18181c;
+
+  --color-surface:        #1c1c21;
+  --color-surface-raised: #232329;
+  --color-surface-border: #2a2a32;
+
+  --color-ink:           #e8e8ed;
+  --color-ink-secondary: #9898a8;
+  --color-ink-muted:     #5a5a6a;
+  --color-ink-inverse:   #0c0c0e;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
